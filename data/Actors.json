@@ -1,0 +1,11 @@
+[
+null,
+{"id":1,"battlerName":"","characterIndex":1,"characterName":"mc","classId":1,"equips":[0],"faceIndex":0,"faceName":"SF_Actor1","traits":[{"code":51,"dataId":1,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Riko","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"","characterIndex":0,"characterName":"mc","classId":1,"equips":[1],"faceIndex":1,"faceName":"SF_Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Wife","nickname":"","note":"","profile":""},
+{"id":3,"battlerName":"","characterIndex":2,"characterName":"","classId":5,"equips":[31],"faceIndex":2,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"Simulator","nickname":"","note":"","profile":"Nama warmindo kamu"},
+{"id":4,"battlerName":"","characterIndex":3,"characterName":"","classId":5,"equips":[31],"faceIndex":3,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"Reputation","nickname":"","note":"","profile":""},
+{"id":5,"battlerName":"Actor1_5","characterIndex":4,"characterName":"Actor1","classId":2,"equips":[7],"faceIndex":4,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Loan Shark","nickname":"","note":"","profile":""},
+{"id":6,"battlerName":"Actor1_6","characterIndex":5,"characterName":"Actor1","classId":2,"equips":[7],"faceIndex":5,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Kasey","nickname":"","note":"","profile":""},
+{"id":7,"battlerName":"Actor1_7","characterIndex":6,"characterName":"Actor1","classId":3,"equips":[7],"faceIndex":6,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Eliot","nickname":"","note":"","profile":""},
+{"id":8,"battlerName":"Actor1_8","characterIndex":7,"characterName":"Actor1","classId":3,"equips":[7],"faceIndex":7,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Roza","nickname":"","note":"","profile":""}
+]
