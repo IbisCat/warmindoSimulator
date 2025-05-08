@@ -886,17 +886,21 @@ Graphics._createCanvas = function() {
 };
 
 Graphics._updateCanvas = function() {
-    const aspectRatio = this._width / this._height; // Rasio aspek asli (lebar/tinggi)
-    const containerHeight = window.innerHeight; // Tinggi layar atau container
-    const newHeight = containerHeight; // Sesuaikan tinggi dengan layar
-    const newWidth = newHeight * aspectRatio; // Hitung lebar berdasarkan rasio aspek
+    const aspectRatio = 16 / 9;
+    const bodyHeight = document.body.clientHeight;
+    const newHeight = bodyHeight;
+    const newWidth = Math.floor(newHeight * aspectRatio);
 
-    this._canvas.width = this._width; // Tetap gunakan lebar asli untuk rendering
-    this._canvas.height = this._height; // Tetap gunakan tinggi asli untuk rendering
-    this._canvas.style.width = `${newWidth}px`; // Sesuaikan lebar tampilan
-    this._canvas.style.height = `${newHeight}px`; // Sesuaikan tinggi tampilan
+    this._canvas.width = this._width;
+    this._canvas.height = this._height;
+
+    this._canvas.style.width = `${newWidth}px`;
+    this._canvas.style.height = `${newHeight}px`;
     this._canvas.style.zIndex = 1;
-    this._centerElement(this._canvas); // Pusatkan canvas di layar
+    this._canvas.style.position = "absolute";
+    this._canvas.style.top = "50%";
+    this._canvas.style.left = "50%";
+    this._canvas.style.transform = "translate(-50%, -50%)";
 };
 
 Graphics._updateVideo = function() {
