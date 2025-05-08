@@ -886,8 +886,12 @@ Graphics._createCanvas = function() {
 };
 
 Graphics._updateCanvas = function() {
+<<<<<<< HEAD
+    this._canvas.width = this._width;
+    this._canvas.height = this._height;
+=======
     const aspectRatio = this._width / this._height; // Rasio aspek asli (lebar/tinggi)
-    const containerHeight = window.innerHeight; // Tinggi layar atau container
+    const containerHeight = document.body.clientHeight; // Tinggi layar atau container
     const newHeight = containerHeight; // Sesuaikan tinggi dengan layar
     const newWidth = newHeight * aspectRatio; // Hitung lebar berdasarkan rasio aspek
 
@@ -895,8 +899,9 @@ Graphics._updateCanvas = function() {
     this._canvas.height = this._height; // Tetap gunakan tinggi asli untuk rendering
     this._canvas.style.width = `${newWidth}px`; // Sesuaikan lebar tampilan
     this._canvas.style.height = `${newHeight}px`; // Sesuaikan tinggi tampilan
+>>>>>>> 480acb1542132c43ff1546bbf6eeab2d99b74a1d
     this._canvas.style.zIndex = 1;
-    this._centerElement(this._canvas); // Pusatkan canvas di layar
+    this._centerElement(this._canvas);
 };
 
 Graphics._updateVideo = function() {
