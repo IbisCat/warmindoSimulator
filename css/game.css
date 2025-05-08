@@ -114,3 +114,18 @@ body {
         transform: rotate(360deg);
     }
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#gameCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+}
