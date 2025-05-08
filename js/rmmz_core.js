@@ -887,7 +887,7 @@ Graphics._createCanvas = function() {
 
 Graphics._updateCanvas = function() {
     const aspectRatio = this._width / this._height; // Rasio aspek asli (lebar/tinggi)
-    const containerHeight = window.innerHeight; // Tinggi layar atau container
+    const containerHeight = document.body.clientHeight; // Tinggi layar atau container
     const newHeight = containerHeight; // Sesuaikan tinggi dengan layar
     const newWidth = newHeight * aspectRatio; // Hitung lebar berdasarkan rasio aspek
 
