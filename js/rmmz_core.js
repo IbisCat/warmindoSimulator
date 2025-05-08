@@ -891,13 +891,10 @@ Graphics._updateCanvas = function() {
     const newHeight = containerHeight; // Sesuaikan tinggi dengan layar
     const newWidth = newHeight * aspectRatio; // Hitung lebar berdasarkan rasio aspek
 
-
-    this._canvas.width = `${newWidth}px`;// Tetap gunakan lebar asli untuk rendering
-    this._canvas.height = `${newHeight}px`; // Tetap gunakan tinggi asli untuk rendering
-    /*this._canvas.width = this._width; // Tetap gunakan lebar asli untuk rendering
+    this._canvas.width = this._width; // Tetap gunakan lebar asli untuk rendering
     this._canvas.height = this._height; // Tetap gunakan tinggi asli untuk rendering
     this._canvas.style.width = `${newWidth}px`; // Sesuaikan lebar tampilan
-    this._canvas.style.height = `${newHeight}px`; // Sesuaikan tinggi tampilan*/
+    this._canvas.style.height = `${newHeight}px`; // Sesuaikan tinggi tampilan
     this._canvas.style.zIndex = 1;
     this._centerElement(this._canvas); // Pusatkan canvas di layar
 };
