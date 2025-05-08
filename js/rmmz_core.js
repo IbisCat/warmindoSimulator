@@ -861,7 +861,8 @@ Graphics._makeErrorHtml = function(name, message /*, error*/) {
 };
 
 Graphics._defaultStretchMode = function() {
-    return Utils.isNwjs() || Utils.isMobileDevice();
+    //return Utils.isNwjs() || Utils.isMobileDevice();
+    return true;
 };
 
 Graphics._createErrorPrinter = function() {
