@@ -833,7 +833,7 @@ Graphics._updateRealScale = function() {
 
 Graphics._stretchWidth = function() {
     if (Utils.isMobileDevice()) {
-        return window.innerHeight;
+        return window.innerWidth;
         //return document.documentElement.clientWidth;
     } else {
         return window.innerWidth;
