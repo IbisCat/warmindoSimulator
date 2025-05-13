@@ -506,6 +506,10 @@ Scene_Title.prototype.create = function() {
 
 Scene_Title.prototype.start = function() {
     Scene_Base.prototype.start.call(this);
+        // Menampilkan iklan banner saat menu utama dimuat
+    if (typeof AndroidInterface !== "undefined") {
+        AndroidInterface.admobBannerAd("true");
+    }
     SceneManager.clearStack();
     this.adjustBackground();
     this.playTitleMusic();
@@ -2229,7 +2233,7 @@ Scene_Options.prototype.optionsWindowRect = function() {
 
 Scene_Options.prototype.maxCommands = function() {
     // Increase this value when adding option items.
-    return 7;
+    return 4;
 };
 
 Scene_Options.prototype.maxVisibleCommands = function() {
@@ -2448,6 +2452,10 @@ Scene_Load.prototype.onLoadSuccess = function() {
     this.reloadMapIfUpdated();
     SceneManager.goto(Scene_Map);
     this._loadSuccess = true;
+    // Menampilkan iklan interstitial saat menu utama dimuat
+    if (typeof AndroidInterface !== "undefined") {
+        AndroidInterface.admobInterstitialAd();
+    }
 };
 
 Scene_Load.prototype.onLoadFailure = function() {
