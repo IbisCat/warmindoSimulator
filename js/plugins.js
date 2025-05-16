@@ -19,5 +19,6 @@ var $plugins =
 {"name":"RestockInput","status":true,"description":"A window for inputting quantity of items to restock in the game.","parameters":{"ItemVarId":"50","QuantityVarId":"51","PromoVarId":"48","TotalPriceVarId":"52"}},
 {"name":"MNKR_CommandPosition","status":true,"description":"メインメニューの表示位置を変更します。","parameters":{"commandPosition":"5","commandRows":"3","statusWindowHide":"true","goldWindowHide":"true"}},
 {"name":"menuButtonMove","status":true,"description":"Make the map menu button (Touch UI) appear on the left.","parameters":{"X":"1230","Y":"670"}},
-{"name":"LL_InfoPopupWIndow","status":true,"description":"ポップアップでインフォメッセージを表示します。","parameters":{}}
+{"name":"LL_InfoPopupWIndow","status":true,"description":"ポップアップでインフォメッセージを表示します。","parameters":{}},
+{"name":"EarnedRewardPlugin","status":true,"description":"Plugin untuk mendefinisikan fungsi global EarnedReward untuk pengelolaan reward.","parameters":{"none":""}}
 ];
