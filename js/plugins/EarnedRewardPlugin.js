@@ -12,7 +12,7 @@
     window.EarnedReward = function(event) {
         if (event === "open_store") {
             // Menambahkan pesan ke dalam Message Window
-            $gameMessage.add("\tl{reward1}");
+            //$gameMessage.add("\\tl{reward1}");
             
             // Mengubah Switch 32 menjadi ON setelah mendapatkan reward
             $gameSwitches.setValue(32, true);  // Switch 32 ON
